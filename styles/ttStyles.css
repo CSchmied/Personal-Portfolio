@@ -1,0 +1,108 @@
+.tictacTitle {
+  margin-top: 6%;
+  text-align: center;
+}
+
+/* Generate the tic tac toe board */
+.board {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  /* background-color: #f67d4b; */
+  color: #fff;
+  /* border: 6px solid #3f5588; */
+  border-radius: 10px;
+  margin-top: 3%;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+/* Individual boxes inside the generated board */
+.box {
+ 
+  background-color: #f67d4b;
+  border: 2px solid #3f5588;
+  border-radius: 2px;
+  margin: 2px;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+  /* background: #f67d4b; */
+  margin: auto;
+}
+
+.modal-title {
+  color: #f67d4b;
+}
+
+/* Modal Footer */
+.modal-footer {
+  margin: auto;
+}
+
+/* Modal Content */
+.modal-content {
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.reset_btn {
+  font-size: 24px;
+  color: #3f5588;
+  background: white;
+  border: 2px solid #f67d4b;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  box-shadow: 0 9px #999;
+}
+
+.reset_btn:hover {
+  background: #f67d4b;
+  color: #3f5588;
+}
+
+.reset_btn:active {
+  background-color: #f67d4b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

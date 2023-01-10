@@ -1,0 +1,182 @@
+/* Sets the font for the entire page */
+html * {
+    /* font-size: 16px; */
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+.navbarScroll.navbarDark {
+    background-color: #F67D4B;
+}
+
+/* Helps with resizing of the web screen */
+.container{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width:90%; /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+} 
+
+/* Background image for the home back */
+.image {
+    height:100vh;
+    background: url('../images/stadium.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+/* Welcome text on the center of the home page */
+.welcome {
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.3rem;
+    border-radius: 10px;
+    background: #F67D4B;
+}
+
+.welcome h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #3F5588; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3F5588; }
+  }
+
+/* Styling for the profile picture in the About Me page */
+
+.profile {
+    margin: 40px;
+    /* margin-left: 50%; */
+    border-radius: 8px;
+    /* height: 450px;
+    width: 400px; */
+    float: left;
+}
+
+/* Code to keep articles of the site separate */
+
+
+/* Styling for the aside section in the About Me page */
+aside {
+    margin: 40px;
+    /* margin-left: 40px;  */
+    padding: 50px;
+    border-radius: 8px;
+    height: 450px;
+    width: 70%;
+    float: right;
+    background: #F67D4B;
+    border-top: 20px solid #3F5588;
+    border-bottom: 20px solid #3F5588;
+    color: white;
+}
+
+aside footer {
+    text-align: center;
+}
+
+/* Turn all the colors of the headings to blue */
+h1, h2, h3, h4, h5, h6 {
+    color: #3F5588;
+}
+
+/* Position for the Auburn logo in the About Me page */
+.auburnseal {
+    height: 60px;
+    width: 200px;
+    align-items: center;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+}
+
+/* Centers the cards in the middle */
+.card {
+    margin: auto;
+    position: fixed;
+
+}
+
+.card:hover {
+    /* background: #F67D4B; */
+    border: 2px solid #F67D4B;
+}
+
+/* Determining the size of the cards */
+.skillCard.card {
+    text-align: center;
+    height: 280px;
+    cursor: pointer;
+}
+
+/* Determining the size of the cards */
+.projectCard.card {
+    text-align: center;
+    height: 500px;
+    cursor: pointer;
+}
+
+.link_btn {
+    font-size: 24px;
+    color: #3f5588;
+    background: white;
+    border: 2px solid #f67d4b;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    box-shadow: 0 9px #999;
+  }
+  
+  .link_btn:hover {
+    background: #f67d4b;
+    color: #3f5588;
+  }
+  
+  .link_btn:active {
+    background-color: #f67d4b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.contact{
+    margin: 40px;
+    /* margin-left: 40px;  */
+    padding: 50px;
+    border-radius: 8px;
+    height: 450px;
+    width: 40%;
+    float: right;
+    background: #F67D4B;
+    border-top: 20px solid #3F5588;
+    border-bottom: 20px solid #3F5588;
+    color: white;
+}
+
+#footer {
+    background: #F67D4B;
+    text-align: center;
+}
+
